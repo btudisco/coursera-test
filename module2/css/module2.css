@@ -1,23 +1,114 @@
 /* Base Styles */
 
+* {
+	box-sizing: border-box;
+	font-family: trebuchet ms;
+	font-weight: 800;
+}
+body {
+	margin: 20px;
+}
 
+section {
+	float:left;
+	padding: 10px;
+	width:100%;
+}
+
+article {
+	float:left;
+	color: white;
+	text-shadow: 2px 2px 8px black;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	margin: 5px;
+}
+
+ div {
+	padding: 2px 35px 2px 35px;
+}
+
+p {
+	float:left;
+	padding: 0px 10px 0px 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.main-title {
+	font-size: 175%;
+	margin: 10px;
+	text-align: center;
+}
+
+#chic-art {
+	background-image: url(http://del.h-cdn.co/assets/17/15/1024x512/landscape-1491919518-jalapeno-popper-chicken-3.jpg);
+	background-size: cover;
+}
+
+
+#beef-art {
+	background-image: url(http://www.seriouseats.com/images/2016/01/20160116-american-beef-stew-recipe-10.jpg);
+	background-size: cover;
+}
+
+
+#sushi-art {
+	background-image: url(http://www.sushisasa.com/wp-content/uploads/2017/05/moriawase-2.jpg);
+	background-size: cover;
+}
+
+.chicken {
+	border: solid black 1px;
+	background-color: #ffff99;
+	float:right;
+	clear: left;
+	font-size: 125%
+
+}
+
+.beef {
+	border: solid black 1px;
+	background-color: #ff6666;
+	float:right;
+	clear:left;
+	font-size: 125%
+}
+
+.sushi {
+	border: solid black 1px;
+	background-color: #66ccff;
+	float:right;
+	clear:left;
+	font-size: 125%
+}
 
 /* Large sized devices */
 @media (min-width: 992px) {
-  
+  #chic-sec, #beef-sec, #sushi-sec {
+  	width:33.33%;
+  }
   
 }
 
 
 /* Medium sized devices */
 @media (min-width: 768px) and (max-width: 991px) {
-  
+  #chic-sec, #beef-sec {
+  	width:50%;
+  }
+  #sushi-sec {
+  	width:100%;
+  }
   
 }
 
 
 /* Small sized devices */
 @media (max-width: 767px) {
-  
+  #chic-sec, #beef-sec, #sushi-sec {
+  	width:100%;
+  }
   
 }
